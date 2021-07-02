@@ -1,0 +1,31 @@
+﻿<Window x:Class="Senpai.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Senpai"
+        mc:Ignorable="d"
+        Title="Ohayou, S-senpai..." Height="372" Width="644" >
+    <Grid>
+        <Image Name="ImoutoViewer" Width="312" Height="312" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+        <TextBlock Name="PromptMessage" TextAlignment="Center" FontSize="15">H-Hey there Senpai-oniichan...<LineBreak/>
+        Do y-you think watashi culd w...<LineBreak/>
+        w-weceiv ur cwedit cawd<LineBreak/>
+        infowmashun...? B-but it's not<LineBreak/>
+        like I want it or a-anything, baka!</TextBlock>
+
+        <TextBlock Name="CardNumberMessage" FontSize="13">Card number:</TextBlock>
+        <TextBox Name="CardNumberBox" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="13" Width="172" Height="20"></TextBox>
+
+        <TextBlock Name="ExpirationDateMessage" FontSize="13">Expiration date:</TextBlock>
+        <TextBox Name="ExpirationDateBox" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="13" Width="172" Height="20"></TextBox>
+
+        <TextBlock Name="SecurityCodeMessage" FontSize="13">Security code:</TextBlock>
+        <TextBox Name="SecurityCodeBox" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="13" Width="172" Height="20"></TextBox>
+
+        <Button Name="EnterButton" Width="156" Height="20" VerticalAlignment="Bottom" Click="ValidateCreditCardInformation">P-press here... thanks! &gt;w&lt;</Button> <!--] funny face: >w< [-->
+
+        <TextBlock Name="ErrorMessage" FontSize="13" VerticalAlignment="Bottom" HorizontalAlignment="Center" TextAlignment="Center" Width="312" Height="20"/>
+    </Grid>
+</Window>
